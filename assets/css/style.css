@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Outfit", sans-serif;
+    box-sizing: border-box;
+}
+:root {
+    -soft-blue: hsl(215, 51%, 70%);
+    -cyan: hsl(178, 100%, 50%);
+    -very-dark-blue1: hsl(217, 54%, 11%);
+    -very-dark-blue2: hsl(216, 50%, 16%);
+    -very-dark-blue3: hsl(215, 32%, 27%);
+    -white: hsl(0, 0%, 100%);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(217, 54%, 11%);
+}
+.container {
+    width: 350px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 1px 10px 15px #0c1729;
+    position: relative;
+}
+.content {
+    padding: 20px;
+}
+.card-img {
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    
+}
+.card-img img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.card-text {
+    padding-top: 20px;
+}
+.card-text .title {
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+}
+
+.card-text .desc {
+    padding-top: 10px;
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+.card-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-top: 10px;
+    align-items: center;
+    
+}
+.card-details .cristal {
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+    display: flex;
+}
+.card-details .day {
+    color: hsl(215, 51%, 70%);
+    display: flex;
+    
+}
+.card-details .day p,
+.card-details .cristal p{
+    padding-left: 5px;
+}
+
+.card-perfil {
+    display: flex;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid;
+    border-top: 1px solid hsl(215, 51%, 70%);
+}
+.card-perfil img {
+    float: left;
+    width: 30px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.card-perfil div {
+    flex: 1;
+    line-height: 30px;
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+.card-perfil div span {
+    color: #fff;
+}
+
+.card-img .hover-div {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: hsl(178, 100%, 50%);
+    opacity: 60%;
+    display: none;
+    
+}
+
+.card-img .hover-div img {
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    z-index: 999;
+    width: 100px;
+}
+
+
+.card-text .title:hover,
+.card-perfil div span:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+    transition: 0.3s ease-in-out 0.1s;
+}
+
+.card-img:hover .hover-div , .hover-view{
+    display: block;
+    cursor: pointer;
+    width: 100%;
+       
+}
+.card-img:hover .hover-div {
+    transition-timing-function: ease-out;
+    transition-duration: 2s;
+    transition-delay: 1s;
+}
+
